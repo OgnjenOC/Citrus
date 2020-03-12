@@ -1,5 +1,4 @@
- 
-      <form action="comments/sendComment.php" method="POST" target="_blank">
+       <form action="comments/sendComment.php" method="POST" target="_blank">
           <br>
           <label for="fullName">Name:</label>
           <input type="text" id="fullName" name="fullName">

@@ -44,27 +44,48 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
   <head>
     <title>Admin Login</title>    
     <meta charset="utf-8">
+    <style>
+        /* Bordered form */
+    form {
+        border: 3px solid #f1f1f1;
+    }
+
+    /* Full-width inputs */
+    input[type=text], input[type=password] {
+        width: 80%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    .container {
+        padding: 16px;
+    }
+    </style>
   </head>
   
   <body>
-      <div>
+      
           <form action="login.php" method="POST">
-              <p>
+              <div class="container">
+                <p>
                   <label>Username:</label>
                   <input type="text" id="user" name="user" />
-              </p>
+                </p>
               
-              <p>
+                <p>
                   <label>Password:</label>
                   <input type="password" id="pass" name="pass" />
-              </p>
+                </p>
               
-              <p>
-               <input type="submit" id="btn" value="Login" />
-              </p>
-              
+                <p>
+                  <input type="submit" id="btn" value="Login" />
+                </p>
+              </div>
           </form>
-      </div>
+      
   </body>
   
   
