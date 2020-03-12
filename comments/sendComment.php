@@ -7,7 +7,7 @@ $feedback = $_POST['comment'];
 
 
 //set up some static information
-$toaddress = "cicovic@gmail.com";
+$toaddress = "someemail@gmail.com";
 
 $subject = "Comments from web site";
 
@@ -15,7 +15,7 @@ $mailcontent = "Customer name: ".filter_var($name)."\n".
                "Customer email: ".$email."\n".
                "Customer comments:\n".$feedback."\n";
 
-$fromaddress = "From: webserver@example.com";
+$fromaddress = "From: server@dwdwd.com";
 
 //invoke mail() function to send mail
 mail($toaddress, $subject, $mailcontent, $fromaddress);
